@@ -1,0 +1,24 @@
+[package]
+name = "hookcatch"
+version = "0.1.0"
+edition = "2021"
+description = "A local, self-hosted webhook receiver that logs every incoming HTTP request in real time — a webhook.site/RequestBin alternative you run yourself"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/hookcatch"
+readme = "README.md"
+keywords = ["webhook", "http", "debugging", "cli", "requestbin"]
+categories = ["command-line-utilities"]
+
+[lib]
+name = "hookcatch"
+path = "src/lib.rs"
+
+[[bin]]
+name = "hookcatch"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
+chrono = "0.4"
