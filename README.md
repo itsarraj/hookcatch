@@ -7,6 +7,12 @@ for debugging what a third-party service (Stripe, GitHub, a payment
 processor) is actually sending you, without a request ever leaving your
 own machine or landing on someone else's server first.
 
+## Installation
+
+```sh
+cargo install --path .
+```
+
 ## Usage
 
 ```bash
